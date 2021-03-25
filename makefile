@@ -1,10 +1,10 @@
 build:
-	gcc -o compute_seq.x compute_seq.c
+	gcc -o mc_sek.x mc_sek.c
 	mpicc -o compute_pi.x compute_pi.c
 	
 
 seq:
-	@./compute_seq.x $(n)
+	@./mc_sek.x $(n)
 	
 pi:
 	mpiexec -np $(p) ./compute_pi.x $(n)
