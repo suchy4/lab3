@@ -1,14 +1,22 @@
 #!/bin/bash -l
 #SBATCH --nodes 1
 #SBATCH --ntasks 12
-#SBATCH --time=01:00:00
+#SBATCH --time=2:00:00
 #SBATCH --partition=plgrid
 #SBATCH --account=plgmpr21zeus
-
-srun --nodes=1 --ntasks=12 --time=00:10:00 --partition=plgrid --account=plgmpr21zeus --pty /bin/bash
+#SBATCH --constraint="intel" 
 
 module add plgrid/tools/openmpi
 
-mpicc -o compute_pi.x compute_pi.c
+make build
 
-mpiexec -np 12 ./compute_pi.x 1000000000
+chmod 777 *
+
+make strong_1
+make weak_1
+
+make strong_2
+make weak_2
+
+make strong_3
+make weak_3
