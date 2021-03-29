@@ -1,0 +1,11 @@
+ plgrid/tools/gcc/4.9.2 loaded.
+ plgrid/tools/java7/oracle/1.7.0_51 loaded.
+ plgrid/tools/openmpi/1.10.2-gnu-4.9.2-ib loaded.
+mpicc -o compute_pi.x compute_pi.c
+mpiexec -np 12 ./compute_pi.x 15000000000 2>/dev/null
+54.609800	mpiexec -np 1 ./compute_pi.x 1500000000 2>/dev/null
+62.262574	mpiexec -np 12 ./compute_pi.x 550000000 2>/dev/null
+2.026063	mpiexec -np 1 ./compute_pi.x 55000000 2>/dev/null
+2.283412	mpiexec -np 12 ./compute_pi.x 20000000 2>/dev/null
+0.086858	mpiexec -np 1 ./compute_pi.x 2000000 2>/dev/null
+0.082665	
