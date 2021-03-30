@@ -1,0 +1,77 @@
+ plgrid/tools/gcc/4.9.2 loaded.
+ plgrid/tools/java7/oracle/1.7.0_51 loaded.
+ plgrid/tools/openmpi/1.10.2-gnu-4.9.2-ib loaded.
+mpicc -o compute_pi.x compute_pi.c
+mpiexec -np 12 ./compute_pi.x 17500000000 2>/dev/null
+64.043443	mpiexec -np 11 ./compute_pi.x 17500000000 2>/dev/null
+70.480786	mpiexec -np 10 ./compute_pi.x 17500000000 2>/dev/null
+76.858990	mpiexec -np 9 ./compute_pi.x 17500000000 2>/dev/null
+86.154099	mpiexec -np 8 ./compute_pi.x 17500000000 2>/dev/null
+95.332912	mpiexec -np 7 ./compute_pi.x 17500000000 2>/dev/null
+113.117624	mpiexec -np 6 ./compute_pi.x 17500000000 2>/dev/null
+127.195144	mpiexec -np 5 ./compute_pi.x 17500000000 2>/dev/null
+211.107173	mpiexec -np 4 ./compute_pi.x 17500000000 2>/dev/null
+183.836156	mpiexec -np 3 ./compute_pi.x 17500000000 2>/dev/null
+251.592436	mpiexec -np 2 ./compute_pi.x 17500000000 2>/dev/null
+368.314526	mpiexec -np 1 ./compute_pi.x 17500000000 2>/dev/null
+726.287402	mpiexec -np 12 ./compute_pi.x 21000000000 2>/dev/null
+78.803493	mpiexec -np 11 ./compute_pi.x 19250000000 2>/dev/null
+77.604241	mpiexec -np 10 ./compute_pi.x 17500000000 2>/dev/null
+77.080098	mpiexec -np 9 ./compute_pi.x 15750000000 2>/dev/null
+76.079698	mpiexec -np 8 ./compute_pi.x 14000000000 2>/dev/null
+76.243611	mpiexec -np 7 ./compute_pi.x 12250000000 2>/dev/null
+109.149930	mpiexec -np 6 ./compute_pi.x 10500000000 2>/dev/null
+76.264470	mpiexec -np 5 ./compute_pi.x 8750000000 2>/dev/null
+76.246550	mpiexec -np 4 ./compute_pi.x 7000000000 2>/dev/null
+76.078741	mpiexec -np 3 ./compute_pi.x 5250000000 2>/dev/null
+76.182838	mpiexec -np 2 ./compute_pi.x 3500000000 2>/dev/null
+73.886547	mpiexec -np 1 ./compute_pi.x 1750000000 2>/dev/null
+72.604109	mpiexec -np 12 ./compute_pi.x 700000000 2>/dev/null
+2.587962	mpiexec -np 11 ./compute_pi.x 700000000 2>/dev/null
+2.781194	mpiexec -np 10 ./compute_pi.x 700000000 2>/dev/null
+3.645366	mpiexec -np 9 ./compute_pi.x 700000000 2>/dev/null
+3.418464	mpiexec -np 8 ./compute_pi.x 700000000 2>/dev/null
+3.811429	mpiexec -np 7 ./compute_pi.x 700000000 2>/dev/null
+4.384348	mpiexec -np 6 ./compute_pi.x 700000000 2>/dev/null
+5.183832	mpiexec -np 5 ./compute_pi.x 700000000 2>/dev/null
+6.104964	mpiexec -np 4 ./compute_pi.x 700000000 2>/dev/null
+7.331431	mpiexec -np 3 ./compute_pi.x 700000000 2>/dev/null
+9.911926	mpiexec -np 2 ./compute_pi.x 700000000 2>/dev/null
+14.712931	mpiexec -np 1 ./compute_pi.x 700000000 2>/dev/null
+29.065374	mpiexec -np 12 ./compute_pi.x 840000000 2>/dev/null
+3.636110	mpiexec -np 11 ./compute_pi.x 770000000 2>/dev/null
+3.062149	mpiexec -np 10 ./compute_pi.x 700000000 2>/dev/null
+3.044427	mpiexec -np 9 ./compute_pi.x 630000000 2>/dev/null
+3.107912	mpiexec -np 8 ./compute_pi.x 560000000 2>/dev/null
+3.045321	mpiexec -np 7 ./compute_pi.x 490000000 2>/dev/null
+3.647058	mpiexec -np 6 ./compute_pi.x 420000000 2>/dev/null
+3.050147	mpiexec -np 5 ./compute_pi.x 350000000 2>/dev/null
+3.053356	mpiexec -np 4 ./compute_pi.x 280000000 2>/dev/null
+2.970359	mpiexec -np 3 ./compute_pi.x 210000000 2>/dev/null
+3.011900	mpiexec -np 2 ./compute_pi.x 140000000 2>/dev/null
+2.974633	mpiexec -np 1 ./compute_pi.x 70000000 2>/dev/null
+2.875294	mpiexec -np 12 ./compute_pi.x 1500000 2>/dev/null
+0.005536	mpiexec -np 11 ./compute_pi.x 1500000 2>/dev/null
+0.006238	mpiexec -np 10 ./compute_pi.x 1500000 2>/dev/null
+0.006639	mpiexec -np 9 ./compute_pi.x 1500000 2>/dev/null
+0.010486	mpiexec -np 8 ./compute_pi.x 1500000 2>/dev/null
+0.008370	mpiexec -np 7 ./compute_pi.x 1500000 2>/dev/null
+0.009420	mpiexec -np 6 ./compute_pi.x 1500000 2>/dev/null
+0.011401	mpiexec -np 5 ./compute_pi.x 1500000 2>/dev/null
+0.013134	mpiexec -np 4 ./compute_pi.x 1500000 2>/dev/null
+0.016044	mpiexec -np 3 ./compute_pi.x 1500000 2>/dev/null
+0.021512	mpiexec -np 2 ./compute_pi.x 1500000 2>/dev/null
+0.032011	mpiexec -np 1 ./compute_pi.x 1500000 2>/dev/null
+0.062154	mpiexec -np 12 ./compute_pi.x 18000000 2>/dev/null
+0.066023	mpiexec -np 11 ./compute_pi.x 16500000 2>/dev/null
+0.065534	mpiexec -np 10 ./compute_pi.x 15000000 2>/dev/null
+0.066358	mpiexec -np 9 ./compute_pi.x 13500000 2>/dev/null
+0.066604	mpiexec -np 8 ./compute_pi.x 12000000 2>/dev/null
+0.065740	mpiexec -np 7 ./compute_pi.x 10500000 2>/dev/null
+0.065597	mpiexec -np 6 ./compute_pi.x 9000000 2>/dev/null
+0.065582	mpiexec -np 5 ./compute_pi.x 7500000 2>/dev/null
+0.066145	mpiexec -np 4 ./compute_pi.x 6000000 2>/dev/null
+0.064048	mpiexec -np 3 ./compute_pi.x 4500000 2>/dev/null
+0.066054	mpiexec -np 2 ./compute_pi.x 3000000 2>/dev/null
+0.063396	mpiexec -np 1 ./compute_pi.x 1500000 2>/dev/null
+0.062314	
